@@ -1,3 +1,4 @@
+import log.Log;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -8,7 +9,9 @@ public class Demo {
 
     public static void test() {
         System.setProperty("webdriver.chrome.driver", CHROME_DRIVER_PATH);
+        log.Log.initializedLogger();
         WebDriver driver = new ChromeDriver();
+        log.Log.startTestCase("Comenzamos primer prueba");
         driver.navigate().to("https://www.google.com");
         // Agregar esperas explícitas si es necesario
 
@@ -30,8 +33,8 @@ public class Demo {
         } finally {
             // Cerrar el WebDriver adecuadamente
             if (driver != null) {
-                driver.close();
-                // driver.quit();
+                //driver.close();
+                driver.quit();
             }
         }
     }
