@@ -16,7 +16,6 @@ public class DemoOriginal {
         Thread.sleep(10000);
         driver.close();
         //driver.quit();
-
     }
 
     public static void main(String[] args) throws InterruptedException {

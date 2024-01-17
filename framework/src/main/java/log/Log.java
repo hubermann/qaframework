@@ -13,6 +13,7 @@ public class Log {
     }
 
     public static void startTestCase(String sTestCaseCaseName){
+        //escribimos en  logfile.txt (el texto "Start test:" + el adicional que llegue desde la clase demo)
         logger.info("Start test: " + sTestCaseCaseName);
         //Para ver la linea impresa tambien en la consola
         System.out.printf("Start test **** Mostrado en consola ****: ", sTestCaseCaseName);
