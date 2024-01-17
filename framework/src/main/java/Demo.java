@@ -11,6 +11,7 @@ public class Demo {
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://www.google.com");
         // Agregar esperas explícitas si es necesario
+
     }
 
     public static void main(String[] args) {
